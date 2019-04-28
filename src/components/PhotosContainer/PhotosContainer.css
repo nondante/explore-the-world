@@ -1,0 +1,27 @@
+.PhotosContainer{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2,1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  height: 100%;
+
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 575.98px) { 
+  .PhotosContainer{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
+ }
+ img {
+  width: 90%;
+  margin: 0.5em auto;
+}
+}
